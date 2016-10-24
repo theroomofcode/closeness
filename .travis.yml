@@ -1,0 +1,19 @@
+# Config file for automatic testing at travis-ci.org
+
+before_install:
+  - pip install --quiet coveralls
+  - pip install codecov
+
+language: python
+
+python:
+  - "3.5"
+
+install:
+  - pip install -r requirements/test.txt
+
+script:
+  - coverage run --source='.' manage.py test --settings config.settings.test
+
+after_success:
+  - coveralls
