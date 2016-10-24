@@ -1,0 +1,22 @@
+{
+  "name": "closeness",
+  "version": "1.0.0",
+  "description": "Platform to serve content near to the user, using geolocation information.",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theroomofcode/closeness.git"
+  },
+  "author": "Marcos Gabarda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theroomofcode/closeness/issues"
+  },
+  "homepage": "https://github.com/theroomofcode/closeness#readme"
+}
