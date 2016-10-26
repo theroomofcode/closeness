@@ -17,6 +17,7 @@ SECRET_KEY = env('DJANGO_SECRET_KEY')
 # DATABASE CONFIGURATION
 # ------------------------------------------------------------------------------
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#databases
+# See: https://github.com/julianwachholz/dj-config-url
 DATABASES = {
     # Raises ImproperlyConfigured exception if DATABASE_URL not in os.environ
     'default': env.db('DATABASE_URL'),

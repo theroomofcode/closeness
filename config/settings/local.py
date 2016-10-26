@@ -17,8 +17,9 @@ SECRET_KEY = env('DJANGO_SECRET_KEY', default='4)i0p15fwh0c+@b+m4qbd4_%ix19)_!xj
 # DATABASE CONFIGURATION
 # ------------------------------------------------------------------------------
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#databases
+# See: https://github.com/julianwachholz/dj-config-url
 DATABASES = {
-    'default': env.db('DATABASE_URL', default='postgres:///{}'.format(PROJECT_NAME.lower())),
+    'default': env.db('DATABASE_URL', default='postgis:///{}'.format(PROJECT_NAME.lower())),
 }
 DATABASES['default']['ATOMIC_REQUESTS'] = True
 

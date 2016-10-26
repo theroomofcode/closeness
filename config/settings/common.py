@@ -194,8 +194,9 @@ STATICFILES_FINDERS = (
 # DATABASE CONFIGURATION
 # ------------------------------------------------------------------------------
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#databases
+# See: https://github.com/julianwachholz/dj-config-url
 DATABASES = {
-    'default': env.db('DATABASE_URL', default='postgres:///{}'.format(PROJECT_NAME.lower())),
+    'default': env.db('DATABASE_URL', default='postgis:///{}'.format(PROJECT_NAME.lower())),
 }
 DATABASES['default']['ATOMIC_REQUESTS'] = True
 

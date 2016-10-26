@@ -8,7 +8,8 @@ volumes:
 services:
 
   db:
-    image: postgres:9
+    build: compose/postgis/.
+    image: closeness/postgis
     container_name: closeness-db
     volumes:
       - db-data:/var/lib/postgresql
