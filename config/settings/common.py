@@ -123,8 +123,6 @@ TEMPLATES = [
                 'django.template.context_processors.tz',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.request',
-                'notifications.context_processors.notifications',
-                'journeys.context_processors.passenger_statuses',
             ],
             'loaders': [
                 'django.template.loaders.filesystem.Loader',
@@ -145,6 +143,7 @@ DJANGO_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.gis',
 
     # Useful template tags:
     'django.contrib.humanize',
@@ -158,6 +157,7 @@ THIRD_PARTY_APPS = tuple(
 # Apps specific for this project go here.
 LOCAL_APPS = (
     'closeness.users',
+    'closeness.places',
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps

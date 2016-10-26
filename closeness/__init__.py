@@ -1,2 +1,3 @@
 # -*- coding: utf-8 -*-
-from __future__ import unicode_literals, print_function, division
+__version__ = '1.0'
+__version_info__ = tuple([int(num) if num.isdigit() else num for num in __version__.replace('-', '.', 1).split('.')])

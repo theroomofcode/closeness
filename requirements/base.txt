@@ -18,3 +18,9 @@ Pillow==3.4.2
 
 # Database connector
 psycopg2==2.6.2
+
+# Requests
+requests==2.11.1
+
+# Shape files
+pyshp==1.2.10
