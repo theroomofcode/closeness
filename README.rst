@@ -6,6 +6,16 @@ Platform to serve content near to the user, using geolocation information. Made 
 .. image:: https://travis-ci.org/theroomofcode/closeness.svg?branch=master
     :target: https://travis-ci.org/theroomofcode/closeness
 
+Environment variables
+---------------------
+
+For local development:
+
+.. code-block:: bash
+
+    export DATABASE_URL="postgis://postgres:potato@localhost:5432/closeness"
+    export DJANGO_SETTINGS_MODULE="config.settings.local"
+
 Import countries
 ----------------
 

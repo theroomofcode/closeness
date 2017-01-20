@@ -3,10 +3,11 @@ from __future__ import unicode_literals, print_function, division
 
 from django.contrib.gis.db import models
 from django.utils.six import python_2_unicode_compatible
+from model_utils.models import TimeStampedModel
 
 
 @python_2_unicode_compatible
-class Place(models.Model):
+class Place(TimeStampedModel):
     """A 'Place' represents an area in the world with a name. It could be a country, a city, a
     neighborhood or any other kind of place.
     """
