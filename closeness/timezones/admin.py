@@ -3,10 +3,10 @@ from __future__ import unicode_literals, print_function, division
 
 from django.contrib.gis import admin
 
-from closeness.places.models import Place
+from closeness.timezones.models import TimeZone
 
 
-@admin.register(Place)
-class PlaceAdmin(admin.ModelAdmin):
-    list_display = ["id", "name", "order"]
+@admin.register(TimeZone)
+class TimeZoneAdmin(admin.ModelAdmin):
+    list_display = ["id", "name"]
     search_fields = ["name"]

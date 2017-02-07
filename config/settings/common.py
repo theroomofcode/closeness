@@ -158,6 +158,7 @@ THIRD_PARTY_APPS = tuple(
 LOCAL_APPS = (
     'closeness.users',
     'closeness.places',
+    'closeness.timezones',
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
